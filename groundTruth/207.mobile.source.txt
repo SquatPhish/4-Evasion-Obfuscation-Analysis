@@ -1,0 +1,560 @@
+<!DOCTYPE html><html data-placeholder-focus="false" class="mobile has-dob-explanation en ios iphone us webkit safari mobile ios iphone retina ratio2 js portrait history svg cssanimations wf-adobeclean-n4-active wf-adobeclean-n7-active wf-adobeclean-n3-active wf-active" data-pagename="login" lang="en"><!--<![endif]--><head><script type="text/javascript" async="async" src="https://dpm.demdex.net/id?d_visid_ver=1.5.3&amp;d_rtbd=json&amp;d_ver=2&amp;d_orgid=9E1005A551ED61CA0A490D45%40AdobeOrg&amp;d_nsid=0&amp;d_mid=74098787752141920830222580780230681487&amp;d_blob=RKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y&amp;d_cid_ic=AVID%012D6730198507D4FA-400001104000133D&amp;d_cb=s_c_il%5B1%5D._setAudienceManagerFields"></script><script type="text/javascript" async="async" src="https://sstats.adobe.com/id?d_visid_ver=1.5.3&amp;callback=s_c_il%5B1%5D._setAnalyticsFields&amp;mcorgid=9E1005A551ED61CA0A490D45%40AdobeOrg&amp;mid=74098787752141920830222580780230681487"></script><script src="https://use.typekit.net/ecr2zvs.js" async=""></script><script type="text/javascript" async="async" src="https://dpm.demdex.net/id?d_visid_ver=1.5.3&amp;d_rtbd=json&amp;d_ver=2&amp;d_verify=1&amp;d_orgid=9E1005A551ED61CA0A490D45%40AdobeOrg&amp;d_nsid=0&amp;d_cb=s_c_il%5B1%5D._setMarketingCloudFields"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+        <meta name="mswebdialog-newwindowurl" content="*">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <script>
+    (function(d) {
+        'use strict';
+
+        var h = d.documentElement;
+
+        
+
+        // Default: Latin Extended
+        var defaultKit = 'znu8cfp';
+        
+        var language = h.getAttribute('lang') || 'ro';
+
+        
+        var kitLanguages = {
+            // Latin
+            'ecr2zvs': [ 'da', 'de', 'en', 'es', 'it', 'nb', 'pt', 'sv' ],
+            // Latin-extended
+            'znu8cfp': [ 'bg', 'cs', 'et', 'fi', 'fr', 'hr', 'hu', 'lt', 'lv', 'nl', 'pl', 'ro', 'ru', 'sk', 'sl', 'sr', 'tr', 'uk' ],
+
+            
+            // Chinese: traditional & simplified
+            'hlx1mlm': ['zh'],
+            // Japanese
+            'bzy1cfu': ['ja'],
+            // Korean
+            'tra0jgq': ['ko']
+        };
+
+        var getLanguageKit = function(language) {
+            for (var kit in kitLanguages) {
+                if (kitLanguages.hasOwnProperty(kit)) {
+                    
+                    for (var lang in kitLanguages[kit]) {
+                        if (kitLanguages[kit][lang] === language) {
+                            return kit;
+                        }
+                    }
+                }
+            }
+
+            return defaultKit;
+        };
+
+        var triggerEvent = function (eventName) {
+            var event = document.createEvent('Event');
+            event.initEvent(eventName, true, true);
+            document.dispatchEvent(event);
+        }
+
+        var config = {
+            // Events
+            active: function () {
+                triggerEvent('TypekitActive');
+            },
+            inactive: function () {
+                triggerEvent('TypekitInactive');
+            },
+            // Settings
+            async: true,
+            kitId: getLanguageKit(language),
+            scriptTimeout: 3000
+        };
+
+        var hideSpinner = function() {
+            window.clearTimeout(t);
+            var html = document.documentElement;
+            html.className = html.className.replace(/\bwf-loading\b/g, '')+' wf-inactive';
+        };
+
+        var t = setTimeout(hideSpinner, config.scriptTimeout);
+
+        var loadTypekit = function() {
+            var s = d.getElementsByTagName('script')[0];
+            var html = document.documentElement;
+            var tk = d.createElement('script');
+
+            html.className += ' wf-loading';
+
+            tk.src = 'https://use.typekit.net/'+config.kitId+'.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange= initTypeKit;
+            
+            tk.onerror = hideSpinner;
+
+            s.parentNode.insertBefore(tk,s);
+        };
+
+        var typekitInitialized = false;
+
+        var initTypeKit = function() {
+            var a = this.readyState;
+
+            if(typekitInitialized||a&&a!='complete'&&a!='loaded')return;
+
+            typekitInitialized = true;
+
+            
+            try{Typekit.load(config);}catch(e){}
+        };
+
+        
+        if (document.addEventListener) {
+            document.addEventListener("DOMContentLoaded", loadTypekit, false);
+        
+        } else if (document.attachEvent) {
+            document.attachEvent("onreadystatechange", function() {
+                if (document.readyState === "complete" ) {
+                    loadTypekit();
+                }
+            });
+        }
+    })(document);
+</script>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+        <title>Sign in - Adobe ID</title>
+
+        <link rel="stylesheet" type="text/css" href="https://static.adobelogin.com/renga-idprovider/resources/ae671956e476d598a02c3802dd9f2224/spectrum/css/head.css">
+    <style type="text/css">
+                
+/* cjk font-face fixed */ [lang='ja'] #adobesusi {
+    font-family: "adobe-clean","Helvetica","\30E1 \30A4 \30EA \30AA ","Meiryo","\30D2 \30E9 \30AE \30CE \89D2 \30B4  Pro W3","Hiragino Kaku Gothic Pro W3","Osaka","\FF2D \FF33  \FF30 \30B4 \30B7 \30C3 \30AF ","MS PGothic", "Malgun Gothic", "Microsoft YaHei", sans-serif;
+  } #adobesusi { font-family: "adobe-clean", "Geneva", "Tahoma", "Helvetica", "Arial", sans-serif, "Malgun Gothic", "Microsoft YaHei", sans-serif; }</style>
+        <script>var special_day_char = "";</script>
+
+        <!--[if lte IE 8]>
+            <script src="spectrum/script/ie8.js"></script>
+        <![endif]-->
+        <script src="https://static.adobelogin.com/renga-idprovider/resources/ae671956e476d598a02c3802dd9f2224/spectrum/script/spectrum_head.js"></script><style type="text/css">.tk-adobe-clean{font-family:"adobe-clean",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-adobe-clean-n4;src:url(https://use.typekit.net/af/24c826/000000000000000000017701/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/24c826/000000000000000000017701/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/24c826/000000000000000000017701/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-adobe-clean-n7;src:url(https://use.typekit.net/af/8f05ef/000000000000000000017703/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/8f05ef/000000000000000000017703/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/8f05ef/000000000000000000017703/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-adobe-clean-n3;src:url(https://use.typekit.net/af/c2b3ac/0000000000000000000176ff/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/c2b3ac/0000000000000000000176ff/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/c2b3ac/0000000000000000000176ff/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}</style><style type="text/css">@font-face{font-family:adobe-clean;src:url(https://use.typekit.net/af/24c826/000000000000000000017701/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/24c826/000000000000000000017701/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/24c826/000000000000000000017701/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:adobe-clean;src:url(https://use.typekit.net/af/8f05ef/000000000000000000017703/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/8f05ef/000000000000000000017703/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/8f05ef/000000000000000000017703/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:adobe-clean;src:url(https://use.typekit.net/af/c2b3ac/0000000000000000000176ff/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/c2b3ac/0000000000000000000176ff/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/c2b3ac/0000000000000000000176ff/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}</style>
+    </head>
+
+    <body ontouchstart="" id="adobesusi">
+        <div id="spinner_overlay" class="overlay">
+            <div id="squarespinner_template" class="overlay-spinner"></div>
+        </div>
+
+        <script>
+        window.scReport = window.initAnalytics({
+            
+            account: 'adbims',
+            enableAdobeTarget: Boolean("false"),
+            marketingCloud: {
+                orgId: '9E1005A551ED61CA0A490D45@AdobeOrg',
+                server: 'stats.adobe.com',
+                serverSecure: 'sstats.adobe.com',
+                trackingServer: 'stats.adobe.com',
+                trackingServerSecure: 'sstats.adobe.com'
+            },
+            omnitureAccount: 'adbadobenonacdcprod,adbims',
+            
+            clientId: 'adobedotcom2',
+            locale: 'en_US',
+            socialSignInProvider: '',
+            state: JSON.parse('{\"ac\":\"IMS\",\"av\":\"1.46.2-266\",\"di\":null,\"mc\":null,\"pl\":null}'),
+            touaName: ''
+        });
+
+        
+        window.scReport('SignIn_Form');
+    </script>
+    <noscript>
+        <img src="http://adobe.112.2o7.net/b/ss/adbadobenonacdcprod,adbims/1/H.24.3--NS/0" height="1" width="1" border="0" alt=""/>
+    </noscript>
+<div class="container " role="main" id="">
+            <div class="page-header">
+    <div id="idp-flow-header" class="idp-flow-logo">
+        <div class="idp-flow-logo-image"></div>
+        <span id="idp-flow-individual-text" class="idp-flow-logo-text"></span>
+    </div>
+</div>
+<div id="adobeid_view" class="view">
+                <div class="row mod-title-row">
+    <h1 class="page-title">
+                Sign in</h1>
+        </div>
+<div id="indicatorPanel" class="indicatorPanel mod-hidden">
+    <p class="row mod-top-spaced mod-bot-spaced"><strong id="indicatorPanel-Email"></strong></p>
+
+    <p class="row mod-top-spaced mod-bot-spaced">We are taking you to sign in with Facebook.</p>
+
+    <div class="inline-spinner">
+        <div class="inline-spinner-element"></div>
+        <div class="inline-spinner-element mod-second"></div>
+        <div class="inline-spinner-element mod-third"></div>
+    </div>
+
+    <div class="row mod-top-spaced mod-bot-spaced">
+        <button id="indicatorPanel-ContinueButton" class="indicatorPanel-ContinueButton button" type="button"><span class="icon icon-facebook"></span> <span>Continue to Facebook</span></button>
+    </div>
+</div>
+<form id="adobeid_signin" class="loginform" method="post" action="login.do" data-component="spinner" novalidate="novalidate">
+        <input type="hidden" id="adobeid_callback" name="callback" value="https://ims-na1.adobelogin.com/ims/adobeid/adobedotcom2/AdobeID/token?redirect_uri=https%3A%2F%2Fwww.adobe.com%2F%23from_ims%3Dtrue%26old_hash%3D%26api%3Dauthorize&amp;scope=creative_cloud%2CAdobeID%2Copenid%2Cgnav%2Cread_organizations%2Cadditional_info.projectedProductContext%2Csao.ACOM_CLOUD_STORAGE%2Csao.stock%2Csao.cce_private%2Cadditional_info.roles">
+    <input type="hidden" id="adobeid_client_id" name="client_id" value="adobedotcom2">
+    <input type="hidden" id="adobeid_denied_callback" name="denied_callback" value="https://ims-na1.adobelogin.com/ims/denied/adobedotcom2?redirect_uri=https%3A%2F%2Fwww.adobe.com%2F%23from_ims%3Dtrue%26old_hash%3D%26api%3Dauthorize&amp;response_type=token">
+    <input type="hidden" id="adobeid_display" name="display" value="web_v2">
+    <input type="hidden" id="adobeid_flow" name="flow" value="true">
+    <input type="hidden" id="adobeid_flow_type" name="flow_type" value="token">
+    <input type="hidden" id="adobeid_force_marketing_permission" name="force_marketing_permission" value="false">
+    <input type="hidden" id="adobeid_idp_flow_type" name="idp_flow_type" value="login">
+    <input type="hidden" id="adobeid_locale" name="locale" value="en_US">
+    <input type="hidden" id="adobeid_page_name" name="page_name" value="SignIn_Form">
+    <input type="hidden" id="adobeid_relay" name="relay" value="d54a1b5b-e86f-46f6-a036-3b5afa479a72">
+    <input type="hidden" id="adobeid_scope" name="scope" value="creative_cloud,AdobeID,openid,gnav,read_organizations,additional_info.projectedProductContext,sao.ACOM_CLOUD_STORAGE,sao.stock,sao.cce_private,additional_info.roles">
+    <fieldset>
+            <span class="component-wrapper" for="username"><input aria-label="Email address" aria-required="true" autocapitalize="off" autocorrect="off" class="" data-component="usertypedetector" data-component-usertypedetector-blocknont1="false" data-component-usertypedetector-client-id="adobedotcom2" data-component-usertypedetector-endpoint="/renga-idprovider/pages/login_flow" data-component-usertypedetector-enforceuser="false" data-component-usertypedetector-idp-flow-type="login" data-component-usertypedetector-reauthentication="false" data-component-usertypedetector-use-flow="true" id="adobeid_username" name="username" novalidate="novalidate" placeholder="Email address" tabindex="1" type="email" value=""><div class="username-checknote" style="display: none"><span class="checknote"></span></div><div id="username-spinner" class="input-inline-spinner"><div class="inline-spinner"><div class="inline-spinner-element"></div><div class="inline-spinner-element mod-second"></div><div class="inline-spinner-element mod-third"></div></div></div></span>
+        </fieldset>
+
+        <fieldset>
+            <span class="component-wrapper" for="password"><input aria-label="Password" aria-required="true" class="text-center" data-component="capsindicator passwordrevealer" id="adobeid_password" name="password" placeholder="Password" tabindex="2" type="password" value=""><div class="password-revealer off"><div class="password-revealer-img"></div></div></span>
+        </fieldset>
+
+        <fieldset class="gridcontainer signin_options">
+                    <div class="grid_2">
+                        <div class="checkbox">
+    <label>
+        <input type="checkbox" id="adobeid_remember_me" name="remember_me" class="checkbox-input remember_me" checked="" tabindex="3">
+
+        <span class="checkbox-mark needsclick"></span>
+
+        <span class="checkbox-label-text needsclick">
+            Stay signed in</span>
+    </label>
+</div>
+</div>
+
+                    <div class="grid_2">
+                        <div class="forgot-password-container">
+                <a id="adobeid_trouble_signing_in" tabindex="5" data-component="spinner" class="forgotpassword" href="/renga-idprovider/pages/start_forgot_password?client_id=adobedotcom2&amp;callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fadobedotcom2%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26scope%3Dcreative_cloud%252CAdobeID%252Copenid%252Cgnav%252Cread_organizations%252Cadditional_info.projectedProductContext%252Csao.ACOM_CLOUD_STORAGE%252Csao.stock%252Csao.cce_private%252Cadditional_info.roles&amp;denied_callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fdenied%2Fadobedotcom2%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26response_type%3Dtoken&amp;display=web_v2&amp;locale=en_US&amp;relay=d54a1b5b-e86f-46f6-a036-3b5afa479a72&amp;flow=true&amp;flow_type=token&amp;idp_flow_type=login&amp;s_account=adbadobenonacdcprod%2Cadbims" onclick="scReport('SignIn:onClick_ForgotPassword')">
+    Forgot password?</a>
+</div></div>
+                </fieldset>
+
+                <div class="row mod-form-button"><button id="sign_in" class="mod-main" tabindex="4">Sign in</button></div>
+            <div class="row">
+            <div class="row">
+                    <span class="nowrap">Not a member yet?</span>
+                    <a class="nowrap" data-component="spinner" href="create_account?client_id=adobedotcom2&amp;callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fadobedotcom2%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26scope%3Dcreative_cloud%252CAdobeID%252Copenid%252Cgnav%252Cread_organizations%252Cadditional_info.projectedProductContext%252Csao.ACOM_CLOUD_STORAGE%252Csao.stock%252Csao.cce_private%252Cadditional_info.roles&amp;denied_callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fdenied%2Fadobedotcom2%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26response_type%3Dtoken&amp;display=web_v2&amp;locale=en_US&amp;relay=d54a1b5b-e86f-46f6-a036-3b5afa479a72&amp;flow=true&amp;flow_type=token&amp;idp_flow_type=login&amp;s_account=adbadobenonacdcprod%2Cadbims" id="create_account">Get an Adobe ID</a></div>
+
+                <div class="row">
+                    <span id="enterprise_teaser_text">Want to use your company or school account?</span> <br>
+                    <a id="enterprise_signin_link" data-component="spinner viewswitcher" data-component-viewswitcher-targettitle="Sign in with an Enterprise ID" data-component-viewswitcher-targettype="enterprise" data-component-viewswitcher-targetview="#enterprise_view" href="login?idp_flow_type=login_t2&amp;client_id=adobedotcom2&amp;callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fadobedotcom2%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26scope%3Dcreative_cloud%252CAdobeID%252Copenid%252Cgnav%252Cread_organizations%252Cadditional_info.projectedProductContext%252Csao.ACOM_CLOUD_STORAGE%252Csao.stock%252Csao.cce_private%252Cadditional_info.roles&amp;denied_callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fdenied%2Fadobedotcom2%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26response_type%3Dtoken&amp;display=web_v2&amp;locale=en_US&amp;relay=d54a1b5b-e86f-46f6-a036-3b5afa479a72&amp;flow=true&amp;flow_type=token&amp;idp_flow_type=login&amp;s_account=adbadobenonacdcprod%2Cadbims">
+                        Sign in with an Enterprise ID</a>
+                </div>
+            </div>
+
+        <input type="hidden" name="vi" id="adobeid_vi" value="">
+        <input type="hidden" name="authSrc" value="AdobeID">
+        <input type="hidden" name="is_reauthenticating" id="is_reauthenticating" value="false">
+
+    </form>
+
+    <div class="row mod-top-spaced mod-bot-spaced Separator">
+    <span class="Separator-Content">Or sign in with</span>
+</div>
+
+<div class="social-sign-in row">
+    <a class="button mod-main mod-facebook" href="/renga-idprovider/social/v2/signin/facebook?client_id=adobedotcom2&amp;callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fadobedotcom2%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26scope%3Dcreative_cloud%252CAdobeID%252Copenid%252Cgnav%252Cread_organizations%252Cadditional_info.projectedProductContext%252Csao.ACOM_CLOUD_STORAGE%252Csao.stock%252Csao.cce_private%252Cadditional_info.roles&amp;denied_callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fdenied%2Fadobedotcom2%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26response_type%3Dtoken&amp;display=web_v2&amp;locale=en_US&amp;relay=d54a1b5b-e86f-46f6-a036-3b5afa479a72&amp;flow=true&amp;flow_type=token&amp;idp_flow_type=login&amp;s_account=adbadobenonacdcprod%2Cadbims" id="facebook-sign-in-button" onclick="window.scReport('SocialV2:onClick_SocialSignIn', {eVar115: 'facebook'})">Facebook</a>
+        <a class="button mod-main mod-google" href="/renga-idprovider/social/v2/signin/google?client_id=adobedotcom2&amp;callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fadobedotcom2%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26scope%3Dcreative_cloud%252CAdobeID%252Copenid%252Cgnav%252Cread_organizations%252Cadditional_info.projectedProductContext%252Csao.ACOM_CLOUD_STORAGE%252Csao.stock%252Csao.cce_private%252Cadditional_info.roles&amp;denied_callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fdenied%2Fadobedotcom2%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26response_type%3Dtoken&amp;display=web_v2&amp;locale=en_US&amp;relay=d54a1b5b-e86f-46f6-a036-3b5afa479a72&amp;flow=true&amp;flow_type=token&amp;idp_flow_type=login&amp;s_account=adbadobenonacdcprod%2Cadbims" id="google-sign-in-button" onclick="window.scReport('SocialV2:onClick_SocialSignIn', {eVar115: 'google'})">Google</a>
+        </div>
+
+</div>
+            <div class="view" style="display:none" id="enterprise_view">
+                <div class="row mod-title-row">
+    <h1 class="page-title">
+                Sign in</h1>
+        </div>
+<div class="row mod-spaced" id="enterpriseintrotext">
+        <p id="enterprise_enter_email_text">
+            Need help with Enterprise ID?
+            &nbsp;
+            <a href="http://www.adobe.com/go/learn-more-enterprise-id" target="_blank">Learn more.</a>
+        </p>
+    </div>
+
+<div class="row">
+    <span class="error backend"></span>
+</div>
+
+<form id="enterprise_signin" class="loginform" method="post" action="login_t2.do" data-component="spinner" novalidate="novalidate">
+    <input type="password" class="notinview" aria-hidden="true" tabindex="-1">
+    <input type="hidden" id="enterpriseid_callback" name="callback" value="https://ims-na1.adobelogin.com/ims/adobeid/adobedotcom2/AdobeID/token?redirect_uri=https%3A%2F%2Fwww.adobe.com%2F%23from_ims%3Dtrue%26old_hash%3D%26api%3Dauthorize&amp;scope=creative_cloud%2CAdobeID%2Copenid%2Cgnav%2Cread_organizations%2Cadditional_info.projectedProductContext%2Csao.ACOM_CLOUD_STORAGE%2Csao.stock%2Csao.cce_private%2Cadditional_info.roles">
+    <input type="hidden" id="enterpriseid_client_id" name="client_id" value="adobedotcom2">
+    <input type="hidden" id="enterpriseid_denied_callback" name="denied_callback" value="https://ims-na1.adobelogin.com/ims/denied/adobedotcom2?redirect_uri=https%3A%2F%2Fwww.adobe.com%2F%23from_ims%3Dtrue%26old_hash%3D%26api%3Dauthorize&amp;response_type=token">
+    <input type="hidden" id="enterpriseid_display" name="display" value="web_v2">
+    <input type="hidden" id="enterpriseid_flow" name="flow" value="true">
+    <input type="hidden" id="enterpriseid_flow_type" name="flow_type" value="token">
+    <input type="hidden" id="enterpriseid_force_marketing_permission" name="force_marketing_permission" value="false">
+    <input type="hidden" id="enterpriseid_idp_flow_type" name="idp_flow_type" value="login">
+    <input type="hidden" id="enterpriseid_locale" name="locale" value="en_US">
+    <input type="hidden" id="enterpriseid_page_name" name="page_name" value="SignIn_Form">
+    <input type="hidden" id="enterpriseid_relay" name="relay" value="d54a1b5b-e86f-46f6-a036-3b5afa479a72">
+    <input type="hidden" id="enterpriseid_scope" name="scope" value="creative_cloud,AdobeID,openid,gnav,read_organizations,additional_info.projectedProductContext,sao.ACOM_CLOUD_STORAGE,sao.stock,sao.cce_private,additional_info.roles">
+    <fieldset>
+        <span class="component-wrapper" for="username"><input aria-label="Email address or domain name" aria-required="true" autocapitalize="off" autocorrect="off" class="" data-component="usertypedetector" data-component-usertypedetector-blocknont1="false" data-component-usertypedetector-client-id="adobedotcom2" data-component-usertypedetector-endpoint="/renga-idprovider/pages/login_flow" data-component-usertypedetector-enforceuser="false" data-component-usertypedetector-idp-flow-type="login" data-component-usertypedetector-reauthentication="false" data-component-usertypedetector-use-flow="true" id="enterprise_username" name="username" novalidate="novalidate" placeholder="Email address or domain name" tabindex="1" type="email" value=""><div class="username-checknote" style="display: none"><span class="checknote"></span></div><div id="username-spinner" class="input-inline-spinner"><div class="inline-spinner"><div class="inline-spinner-element"></div><div class="inline-spinner-element mod-second"></div><div class="inline-spinner-element mod-third"></div></div></div></span>
+    </fieldset>
+
+    <fieldset id="passwordfieldset">
+            <span class="component-wrapper" for="password"><input aria-label="Password" aria-required="true" class="text-center" data-component="capsindicator passwordrevealer" id="enterprise_password" name="password" placeholder="Password" tabindex="2" type="password" value=""><div class="password-revealer off"><div class="password-revealer-img"></div></div></span>
+        </fieldset>
+
+        <div class="row mod-bot-spaced" id="signinoptions">
+        <fieldset class="gridcontainer signin_options">
+                    <div class="grid_2">
+                        <div class="checkbox">
+    <label>
+        <input type="checkbox" id="enterprise_remember_me" name="remember_me" class="checkbox-input remember_me" checked="" tabindex="3">
+
+        <span class="checkbox-mark needsclick"></span>
+
+        <span class="checkbox-label-text needsclick">
+            Stay signed in</span>
+    </label>
+</div>
+</div>
+                    <div class="grid_2">
+            <div class="forgot-password-container">
+                    <a id="enterprise_trouble_signing_in" tabindex="5" data-component="spinner" class="forgotpassword" href="/renga-idprovider/pages/start_forgot_password?client_id=adobedotcom2&amp;callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fadobedotcom2%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26scope%3Dcreative_cloud%252CAdobeID%252Copenid%252Cgnav%252Cread_organizations%252Cadditional_info.projectedProductContext%252Csao.ACOM_CLOUD_STORAGE%252Csao.stock%252Csao.cce_private%252Cadditional_info.roles&amp;denied_callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fdenied%2Fadobedotcom2%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26response_type%3Dtoken&amp;display=web_v2&amp;locale=en_US&amp;relay=d54a1b5b-e86f-46f6-a036-3b5afa479a72&amp;flow=true&amp;flow_type=token&amp;s_account=adbadobenonacdcprod%2Cadbims&amp;idp_flow_type=login_t2" onclick="scReport('SignIn:onClick_ForgotPassword')">
+    Forgot password?</a>
+</div>
+
+                </div>
+    </fieldset>
+    </div>
+    <fieldset class="row mod-spaced">
+
+        <button id="enterprise_sign_in_button" tabindex="4" class="mod-main">
+                    Sign in with an Enterprise ID</button>
+        </fieldset>
+    <div class="row onemorething">
+        <a id="enterprise_back_to_adobeid" data-component="spinner viewswitcher" data-component-viewswitcher-targettitle="Sign in with an Adobe ID" data-component-viewswitcher-targettype="adobeid" data-component-viewswitcher-targetview="#adobeid_view" href="login?idp_flow_type=login&amp;client_id=adobedotcom2&amp;callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2Fadobedotcom2%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26scope%3Dcreative_cloud%252CAdobeID%252Copenid%252Cgnav%252Cread_organizations%252Cadditional_info.projectedProductContext%252Csao.ACOM_CLOUD_STORAGE%252Csao.stock%252Csao.cce_private%252Cadditional_info.roles&amp;denied_callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fdenied%2Fadobedotcom2%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.adobe.com%252F%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26response_type%3Dtoken&amp;display=web_v2&amp;locale=en_US&amp;relay=d54a1b5b-e86f-46f6-a036-3b5afa479a72&amp;flow=true&amp;flow_type=token&amp;idp_flow_type=login&amp;s_account=adbadobenonacdcprod%2Cadbims">
+            Sign in with an Adobe ID</a>
+    </div>
+    <input type="hidden" name="vi" id="enterprise_vi" value="">
+</form>
+
+</div>
+
+            <div id="chooser_template">
+        <div class="account-chooser binded" id="chooser_screen" tabindex="-1" role="region">
+            <div class="account-chooser-content">
+                <div class="container">
+                    <div id="chooser_title" role="heading" class="row">
+                        <h1 class="page-title">Choose an account for</h1>
+                    </div>
+                    <div class="row mod-spaced">
+                        <strong class="account-chooser-email" id="checked_user_email"></strong>
+                    </div>
+                    <div class="account-chooser-account-list" role="menu" tabindex="-1" aria-labelledby="chooser_title">
+                        <div id="adobeid-option" class="account-chooser-option adobeid item" data-usertype="ind" role="menuitem" tabindex="0">
+                            <div class="account-chooser-arrow"></div>
+                            <div class="account-chooser-account-type">Adobe ID</div>
+                            <div class="account-chooser-account-type-description">Personal account</div>
+                        </div>
+                        <div id="enterpriseid-option" class="account-chooser-option enterprise item" data-usertype="ent" role="menuitem" tabindex="0">
+                            <div class="account-chooser-account-type">Enterprise ID</div>
+                            <div class="account-chooser-account-type-description">Company or school account</div>
+                            <div class="account-chooser-arrow"></div>
+                        </div>
+                    </div>
+                    <div class="account-chooser-footer">
+                        <div class="row mod-top-spaced">
+                            Need help?&nbsp;
+                            <a href="http://www.adobe.com/go/learn-more-enterprise-id" target="_blank" id="learn_more_enterprise">Learn more.</a>
+                        </div>
+                        <div class="row">
+                            <a href="#" class="close" role="button">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chooser_screen account-chooser-spinner binded" id="external_redirect_waiter">
+            <div class="container">
+                <div class="account-chooser-spinner-content">
+                    <div id="spinner_square" class="overlay-spinner"></div>
+
+                    <div class="row mod-top-spaced">
+                        <span>Redirecting you to sign in…</span><br>
+                    </div>
+
+                    <div class="row chooser_footer">
+                        <a href="#" class="cancel">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://static.adobelogin.com/renga-idprovider/resources/ae671956e476d598a02c3802dd9f2224/spectrum/script/spectrum_body.js"></script>
+    <!--[if lte IE 9]>
+            <script src="https://static.adobelogin.com/renga-idprovider/resources/ae671956e476d598a02c3802dd9f2224/spectrum/script/ie.js"></script>
+    <![endif]-->
+
+        <script>
+        jQuery.validator.addMethod("validUsername", function (value, element) {
+            return this.optional(element) || !value.match(new RegExp("^[^@]*@+$"));
+        }, "Enter a valid email address");
+
+        $(document).ready(function () {
+            $(".loginform").each(function () {
+                $(this).validate({
+                    errorPlacement: function (error, element) {
+                        error.attr("aria-hidden", "true");
+                        var fieldset = $(element).closest('fieldset');
+                        if (fieldset) {
+                            error.appendTo(fieldset);
+                        } else {
+                            error.insertAfter(element);
+                        }
+                        element.attr("aria-invalid", "true");
+                    },
+                    invalidHandler: function (event, validator) {
+                        
+                            $(validator.errorList).each(function (id, error) {
+                            switch (error.element.name) {
+                                case "username":
+                                    if (error.rule === "required") {
+                                        scReport('SignIn:Error_EmptyEmail');
+                                    }
+                                    break;
+                                case "password":
+                                    if (error.rule === "required") {
+                                        scReport('SignIn:Error_EmptyPassword');
+                                    }
+                                    break;
+                            }
+                        });
+                        
+                        $('.error.backend').remove();
+                    },
+                    rules: {
+                        username: {
+                            required: true,
+                            email: false,
+                            maxlength: 100,
+                            validUsername: true
+                        },
+                        password: {
+                            required: true,
+                            minlength: 6,
+                            maxlength: 100
+                        }
+                    },
+                    messages: {
+                        username: {
+                            required: "Enter your email",
+                            maxlength: "A maximum of 60 characters are allowed for the Adobe ID."
+                        },
+                        password: {
+                            required: "Enter your password",
+                            minlength: "The password is too short",
+                            maxlength: "The password is too long"
+                        }
+                    }
+                });
+            });
+
+            
+                $('input[type="hidden"][name="remember_me"]').remove();
+            
+
+            $("input[name='username']").change(function () {
+                this.value = $.trim(this.value);
+            });
+
+            $(".forgotpassword").on("mousedown touchstart",function(event){
+                var $this = $(this);
+                // this will kick in before the spinner component and replace the href of the link
+                var userFieldVal = $this.closest('form').find('input[name=username]').val();
+                var href = $this.attr('href');
+
+                if (components.utils.isEmail(userFieldVal)) {
+                    $this.attr('href', href.replace(/[&\?]puser=[^&]+/, '') + '&puser=' + window.encodeURIComponent(userFieldVal));
+                }
+            })
+        });
+
+        var views = {
+            "enterprise": {
+                "onbeforeswitch": function () {
+                    $(".loginform").each(function () {
+                        $(this).validate().resetForm();
+                    });
+                    components.utils.switchLogo("enterprise");
+                    
+                            //if switcher is enabled, swithcing the ui form the link should not pass the email from one ui to another
+                            $("#enterprise_username").val("");
+                            $("#enterprise_password").val("");
+                        
+                },
+                "onafterswitch": function () {
+                    $(".backend").remove();
+                    document.title = "Sign in - Enterprise ID";
+                    
+                            $("#enterprise_username").focus();
+                        
+                }
+            },
+            "adobeid": {
+                "onbeforeswitch": function () {
+                    $(".loginform").each(function () {
+                        $(this).validate().resetForm();
+                    });
+                    components.utils.switchLogo("adobeid");
+                    
+                            $("#adobeid_username").val("");
+                            $("#adobeid_password").val("");
+                        
+                },
+                "onafterswitch": function () {
+                    $(".backend").remove();
+                    document.title = "Sign in - Adobe ID";
+                    
+                            $("#adobeid_username").focus();
+                        
+                }
+            }
+        }
+    </script>
+
+    <script>
+        // disable form fields on submit
+        $('.loginform').on('submit', function() {
+            var $form = $(this);
+
+            if ($form.valid()) {
+                // make all fields readonly while submitting a form
+                $('input', $form).attr('readonly', 'true');
+            }
+        });
+    </script>
+
+    <script src="https://static.adobelogin.com/renga-idprovider/resources/ae671956e476d598a02c3802dd9f2224/spectrum/script/spectrum_capsindicator.js"></script>
+    <script>
+                $(document).ready(function () {
+                    $("#facebook-sign-in-button, #google-sign-in-button").on("click", function(){
+                var rememberMeChecked = $("#adobeid_signin").find('input[name="remember_me"]').is(":checked");
+                var rememberMeParam = "remember_me=" + !!rememberMeChecked;
+                var rememberMeRegex = /([?&])(remember_me=[^&$]*)/;
+                var href = '';
+                if (rememberMeRegex.test(this.href)) {
+                    href = this.href.replace(rememberMeRegex, "$1" + rememberMeParam);
+                } else {
+                    href = this.href + "&" + rememberMeParam;
+                }
+                this.setAttribute("href", href);
+            });
+                });
+            </script>
+        
+    
+</body></html>
