@@ -9,8 +9,9 @@ import evasion_analysis
 
 def main():
     ground_fb = os.getcwd() + "/groundTruth/74.screen.png"
-    p1 = os.getcwd() + "/demo/facebook-c.png"
+    p1 = os.getcwd() + "demo/faceb00k-bid-web.png"
     dis = evasion_analysis.get_image_hash_comparison(ground_fb, p1)
     print (dis)
+
 
 main()
