@@ -29,7 +29,9 @@ def image_hash_computation(img):
     im = Image.open(tmp)
     """
     hash = imagehash.average_hash(im)
+
     #hash = imagehash.phash(im)
+
     return hash
 
 
@@ -55,14 +57,16 @@ def get_image_hash_comparison(img1, img2):
     p2 = image_hash_computation(img2)
     hash_dis = p1 -p2
     print ("Image hash distance is {}".format(hash_dis))
-    return 
+    return
 
 
 def get_string_obfuscation(brand_string, html):
     text_word_str, num_of_forms, attr_word_str = feature_extract.get_structure_html_text(html)
+
+    brand_string = brand_string.lower()
     parts = text_word_str.lower().split()
 
-    print (text_word_str)
+    #print (text_word_str)
     if any(brand_string == p for p in parts):
         print ("NO Obfuscated, can find in the website")
     else:
@@ -84,3 +88,4 @@ def source_code_obfuscation(html):
 
 
 if __name__ == "__main__":
+    pass

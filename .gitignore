@@ -16,3 +16,4 @@ labeled_data/**
 #ignore the tmp file
 tmp/**
 
+__pycache__/**

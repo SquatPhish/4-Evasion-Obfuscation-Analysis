@@ -17,14 +17,12 @@ from nltk import tag
 from autocorrect import spell
 from sys import platform
 
-
-import WORD_TERM_KEYS
 import re
 import os
 import codecs
 
 
-WORD_TERM = WORD_TERM_KEYS.WORD_TERM
+WORD_TERM = []
 
 if platform == "linux" or platform == "linux2":
     pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
@@ -132,95 +130,4 @@ def get_structure_html_text(html_path):
     attr_word_str = ' '.join(words)
 
     return text_word_str, num_of_forms, attr_word_str
-
-
-def text_embedding_into_vector(txt_str):
-    """
-    :param text_str:
-    :return:
-    We split text into a list of features for training
-    """
-    texts = txt_str.split(' ')
-    texts = [spell(w).lower() for w in texts]
-    embedding_vector = [0]*(len(WORD_TERM) + 1)
-    for elem in texts:
-        # if it exist, we set the index plus one
-        # else the last position plus one
-        index = WORD_TERM.index(elem) if elem in WORD_TERM else -1
-        embedding_vector[index] += 1
-
-    return embedding_vector
-
-
-def feature_vector_extraction(candidate):
-    """
-    :param candidate: a candidate object
-    :return: the feature vector
-    it consists of three components: img-text, html-text, form-text
-    """
-    print ("Analyse source and image at:")
-    print (candidate.source_html)
-    print (candidate.img_path)
-
-    if os.path.exists(candidate.source_html) and os.path.exists(candidate.img_path):
-        try:
-            img_text = get_img_text_ocr(candidate.img_path)
-
-            #print (img_text)
-
-            if len(img_text) == 0:
-                return None
-
-            text_word_str, num_of_forms, attr_word_str = get_structure_html_text(candidate.source_html)
-            img_v = text_embedding_into_vector(img_text)
-            txt_v = text_embedding_into_vector(text_word_str)
-            form_v = text_embedding_into_vector(attr_word_str)
-            final_v = img_v + txt_v + form_v + [num_of_forms]
-            return final_v
-
-        except:
-
-            print ("error happened! maybe your img/html-source format is not acceptable?")
-            return None
-
-
-def feature_vector_extraction_from_img_html(img, html):
-
-    if os.path.exists(img) and os.path.exists(html):
-        print ("Img is {}".format(img))
-        print ("HTML is {}".format(html))
-        try:
-            img_text = get_img_text_ocr(img)
-
-            if len(img_text) == 0:
-                return None
-
-            text_word_str, num_of_forms, attr_word_str = get_structure_html_text(html)
-
-            img_v = text_embedding_into_vector(img_text)
-            txt_v = text_embedding_into_vector(text_word_str)
-            form_v = text_embedding_into_vector(attr_word_str)
-            final_v = img_v + txt_v + form_v + [num_of_forms]
-
-            return final_v
-
-        except:
-
-            print ("error happened! maybe your format is not acceptable?")
-            return None
-    else:
-        print ("Not exist path")
-        return None
-
-
-if __name__ == "__main__":
-
-    img = "./test/facebook-c.com.screen.png"
-    img = os.getcwd() + "/test/facebook-c.com..screen.png"
-    source = os.getcwd() + "/test/facebook-c.com..source.txt"
-
-    v = feature_vector_extraction_from_img_html(img=img, html=source)
-    print ("The feature vector is")
-    print (v)
-
 

@@ -5,7 +5,6 @@ from slimit.parser import Parser
 from slimit.visitors import nodevisitor
 from slimit.ast import DotAccessor, Identifier, If
 
-import sys
 import bs4
 from bs4 import BeautifulSoup
 
